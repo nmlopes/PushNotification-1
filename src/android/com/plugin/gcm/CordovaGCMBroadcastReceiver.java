@@ -10,7 +10,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.WakefulBroadcastReceiver;
+
 import android.app.IntentService;
 import android.util.Log;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -27,8 +27,8 @@ public class CordovaGCMBroadcastReceiver extends IntentService  {
 	private static final String TAG = "GcmIntentService";
 
 	@Override
-	public void onReceive(Context context, Intent intent) {
-
+		protected void onHandleIntent(Context context,Intent intent) {
+	
 		Log.d(TAG, "onHandleIntent - context: " + context);
 
 		// Extract the payload from the message
