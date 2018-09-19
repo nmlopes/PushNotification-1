@@ -35,7 +35,6 @@
 	<dependency id="cordova-plugin-globalization"/>
 
 	<!-- android -->
-	<platform name="android">
 
   <platform name="android">
    <config-file target="AndroidManifest.xml" parent="/manifest">
