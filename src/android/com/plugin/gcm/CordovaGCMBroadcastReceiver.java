@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.WakefulBroadcastReceiver;
+import android.app.IntentService;
 import android.util.Log;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import org.json.JSONException;
@@ -22,7 +23,7 @@ import java.util.Random;
  * Implementation of GCMBroadcastReceiver that hard-wires the intent service to be 
  * com.plugin.gcm.GcmntentService, instead of your_package.GcmIntentService 
  */
-public class CordovaGCMBroadcastReceiver extends WakefulBroadcastReceiver {
+public class CordovaGCMBroadcastReceiver extends IntentService  {
 	private static final String TAG = "GcmIntentService";
 
 	@Override
