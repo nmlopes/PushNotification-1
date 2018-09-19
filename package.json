@@ -19,8 +19,9 @@
   ],
   "engines": [
     {
-      "name": "cordova",
-      "version": ">=3.0.0"
+      "cordova-ios": ">=4.3.0",
+      "cordova-android": ">=6.0.0",
+      "cordova": ">=6.4.0"
     }
   ]
 }
